@@ -30,3 +30,7 @@
     font-size: 190px;
     /*font-weight: bold;*/
 }
+
+section.row h1.featurette-heading {
+    margin-top: 0px;
+}
