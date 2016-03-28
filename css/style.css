@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Castleland;
+    src: url(../fonts/castleland.ttf);
+}  
+@font-face {
+    font-family: Aspex;
+    src: url(../fonts/Aspex.ttf);
+}      
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#logo {           
+    font-family: Aspex;
+    font-size: 90px;
+    top: 31px;
+    color: rgb(255, 64, 129);
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+}
+  
+#nom {
+    font-family: Castleland;
+    font-size: 190px;
+    /*font-weight: bold;*/
+}
