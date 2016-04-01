@@ -45,3 +45,14 @@ section.row h2 {
     font-size: 20px;
     font-weight: bolder;
 }
+
+div.carousel, div.carousel .item {
+    height: 350px;
+}
+
+div.carousel .carousel-control .glyphicon-chevron-left, 
+    div.carousel .carousel-control .glyphicon-chevron-right, 
+    div.carousel .carousel-control .icon-next, 
+    div.carousel .carousel-control .icon-prev {
+    top: 70%;
+}
