@@ -78,6 +78,12 @@ div.container.marketing {
 /* override default style */
 /**************************/
 
+@media (min-width: 1200px) {
+    div.carousel, div.carousel .item {
+        height: 583px;
+    }
+}
+
 div.carousel .carousel-control .glyphicon-chevron-left, 
     div.carousel .carousel-control .glyphicon-chevron-right, 
     div.carousel .carousel-control .icon-next, 
