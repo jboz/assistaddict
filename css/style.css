@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+#logo-yeux {
+    margin-bottom: 1em;
+}
+
 #logo {           
     font-family: Aspex;
     font-size: 70px;
@@ -46,13 +50,53 @@ section.row h2 {
     font-weight: bolder;
 }
 
-div.carousel, div.carousel .item {
-    height: 350px;
+.img-circle {
+    border-radius: 50%;
 }
+
+.section-even {
+    background-color: lightgray;
+}
+
+div.container.marketing {
+    width: 100%;
+}
+
+#contact {
+    background-color: #34495e;
+    color: #f2f2f2;
+}
+
+#copyright {
+    background-color: #31A3DD;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/**************************/
+/* override default style */
+/**************************/
 
 div.carousel .carousel-control .glyphicon-chevron-left, 
     div.carousel .carousel-control .glyphicon-chevron-right, 
     div.carousel .carousel-control .icon-next, 
     div.carousel .carousel-control .icon-prev {
     top: 70%;
+}
+
+ /* hide carousel item background image */
+.carousel .item > img {
+   display: none;
+}
+
+/* change carousel background color */
+.carousel-control.right, .carousel-control.left, .carousel .item {
+    background: #843271;
+}
+
+.btn:hover {
+    background-color: #843271;
+    border-color: #843271;
+    color: white;
 }
