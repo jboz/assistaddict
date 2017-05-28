@@ -25,7 +25,8 @@ section {
     margin-bottom: 1em;
 }
 
-#logo {           
+#logo {
+    display: none;
     font-family: Aspex;
     font-size: 70px;
     top: 18px;
