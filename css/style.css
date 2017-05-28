@@ -5,6 +5,10 @@
 @font-face {
     font-family: Aspex;
     src: url(../fonts/Aspex.ttf);
+}
+
+section {
+    padding: 3em;
 }      
 
 .navbar .navbar-nav {
