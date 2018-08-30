@@ -44,9 +44,9 @@
                         <!-- class="active" -->
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#presentation">Presentation</a></li>
-                        <li><a href="#tariffs">Tarifs</a></li>
-                        <li><a id="logo" href="/"><span>Assist'</span><span>Addict</span></a></li>
                         <li><a href="#features">Prestations</a></li>
+                        <li><a id="logo" href="/"><span>Assist'</span><span>Addict</span></a></li>
+                        <li><a href="#tariffs">Tarifs</a></li>
                         <li><a href="#about">A propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -188,7 +188,8 @@
                 <br />
                 <h3>Assist Addict est surtout un société qui s'adapte à <strong>vos besoins</strong>.</h3>
                 <p>Contactez-moi pour me faire part de votre besoin, nous élaborerons ensemble <strong>la solution qui vous
-                        contient</strong>.</p>
+                        contient
+                    </strong>.</p>
             </article>
         </section>
         <hr class="featurette-divider">
@@ -295,7 +296,7 @@
                     vie » </p>
                 <p>Arrivée à un croisement dans ma vie professionnelle, après plus de 10 ans dans le secteur des Sociétés
                     de Services Informatique et d’Ingénierie, il était temps pour moi de voguer vers de nouveaux horizons.
-                    </p>
+                </p>
                 <p>Une réflexion s’imposait : comment continuer à exercer le métier que j’aime tout en satisfaisant le besoin
                     de total renouveau ?</p>
                 <p>L’envie de créer ma propre structure a toujours été présente. Mais la vie a fait que, petit à petit, cette
@@ -306,18 +307,46 @@
         </section>
         <hr class="featurette-divider">
         <section id="contact" class="row">
-            <article class="col-md-12">
-                <h1>Contact</h1>
-                <div class="row">
-                    <div class="col-md-4">
+            <div class="row">
+                <article class="col-md-12">
+                    <h1>Contact</h1>
+                    <div>
                         <address>
-                            <strong>Anne-Lyse CUSIN</strong><br> 7 rue Robert et Reynier<br> 69190 Saint-Fons<br> tel: 07
-                            64 07 19 10
-                            <br /> mail: contact@assistaddict.com
+                            <strong>Anne-Lyse CUSIN</strong><br> 33 route de Vienne 69320 Feyzin<br> tel: 07 64 07 19 10
+                            <br>mail: contact@assistaddict.com
                         </address>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-8">
+                    <form id="contact-form">
+                        <input type="text" name="nom" id="contact-form_nom" placeholder="Nom" required />
+                        <input type="text" name="email" id="contact-form_email" placeholder="Email" required />
+                        <textarea type="text" name="message" id="contact-form_message" placeholder="Message" required></textarea>
+                        <button class="btn btn-lg btn-primary" type="submit" id="submit-contact-form">Envoyer</button>
+                        <div class="alert alert-info" style="display: none;" role="alert">
+                            Envoie en cours ...
+                        </div>
+                        <div class="alert alert-success" style="display: none;" role="alert">
+                            Le message à bien été envoyé. Merci.
+                        </div>
+                        <div class="alert alert-danger error-email" style="display: none;" role="alert">
+                            Adresse email invalide.
+                        </div>
+                        <div class="alert alert-danger error-unexpected" style="display: none;" role="alert">
+                            Erreur lors de l'envoie du message. Contrôler vos informations saisies ou bien contactez moi en cliquant sur ce lien <strong><a
+                                    href="mailto:contact@assistaddict.com">contact@assistaddict.com</a></strong>
+                        </div>
+                    </form>
+                </article>
+                <article class="col-md-4">
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.123151551502!2d4.85632605163355!3d45.668427979001265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c29f84814499%3A0x7adcc9a58ea1d8de!2sAssist&#39;+Addict!5e0!3m2!1sfr!2sch!4v1535583000743"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="copyright" class="row">
             <div class="col-md-12">
@@ -328,6 +357,7 @@
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.serializeObject.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <script type="application/ld+json">

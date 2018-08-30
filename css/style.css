@@ -1,90 +1,90 @@
 @font-face {
-    font-family: Castleland;
-    src: url(../fonts/castleland.ttf);
-}  
+  font-family: Castleland;
+  src: url(../fonts/castleland.ttf);
+}
 @font-face {
-    font-family: Aspex;
-    src: url(../fonts/Aspex.ttf);
+  font-family: Aspex;
+  src: url(../fonts/Aspex.ttf);
 }
 
 body {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 section {
-    padding: 3em;
-}      
+  padding: 3em;
+}
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+  text-align: center;
 }
 
 #logo {
-    display: none;
-    font-family: Aspex;
-    font-size: 70px;
-    top: 18px;
-    color: rgb(255, 64, 129);
-    text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+  display: none;
+  font-family: Aspex;
+  font-size: 70px;
+  top: 18px;
+  color: rgb(255, 64, 129);
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
 }
 
 #logo span {
-    display: block;
-    height: 35px;
+  display: block;
+  height: 35px;
 }
 
 #logo span:nth-child(1) {
-    height: 50px;
-    font-size: 60px;
+  height: 50px;
+  font-size: 60px;
 }
-  
+
 #nom {
-    font-family: Castleland;
-    font-size: 190px;
-    /*font-weight: bold;*/
+  font-family: Castleland;
+  font-size: 190px;
+  /*font-weight: bold;*/
 }
 
 section.row h2 {
-    font-size: 20px;
-    font-weight: bolder;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .img-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .section-even {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 div.container.marketing {
-    width: 100%;
+  width: 100%;
 }
 
 #contact {
-    background-color: #34495e;
-    color: #f2f2f2;
+  background-color: #34495e;
+  color: #f2f2f2;
 }
 
 #copyright {
-    background-color: #31A3DD;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1em 0;
+  background-color: #31a3dd;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 0;
 }
 
 /**************************/
 /*      FIXED MENU        */
 /**************************/
 header#header {
-    position: fixed;
+  position: fixed;
 }
 
 /**************************/
@@ -92,32 +92,72 @@ header#header {
 /**************************/
 
 header.navbar-wrapper {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 div.carousel {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-div.carousel .carousel-control .glyphicon-chevron-left, 
-    div.carousel .carousel-control .glyphicon-chevron-right, 
-    div.carousel .carousel-control .icon-next, 
-    div.carousel .carousel-control .icon-prev {
-    top: 70%;
+div.carousel .carousel-control .glyphicon-chevron-left,
+div.carousel .carousel-control .glyphicon-chevron-right,
+div.carousel .carousel-control .icon-next,
+div.carousel .carousel-control .icon-prev {
+  top: 70%;
 }
 
- /* hide carousel item background image */
+/* hide carousel item background image */
 .carousel .item > img {
-   display: none;
+  display: none;
 }
 
 /* change carousel background color */
-.carousel-control.right, .carousel-control.left, .carousel .item {
-    background: #843271;
+.carousel-control.right,
+.carousel-control.left,
+.carousel .item {
+  background: #843271;
 }
 
 .btn:hover {
-    background-color: #843271;
-    border-color: #843271;
-    color: white;
+  background-color: #843271;
+  border-color: #843271;
+  color: white;
+}
+
+/**************************/
+/*      CONTACT FORM      */
+/**************************/
+#contact .google-map {
+  height: 25rem;
+  position: relative;
+}
+
+#contact iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#contact button {
+  margin: 1em 0;
+}
+
+#contact textarea {
+  height: 200px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: none;
+  color: #565656;
+  line-height: 1.43;
+  min-height: 3.5em;
+  padding: 1.07em 0.5em;
+  border-radius: 0.5rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-image: none;
+  background-clip: padding-box;
+  margin-bottom: 15px;
 }
