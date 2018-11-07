@@ -105,3 +105,7 @@ $("#submit-contact-form").on("click", function(e) {
     }
   });
 });
+
+function mail() {
+  document.location.href = "mailto:contact" + "@" + "assistaddict.com";
+}

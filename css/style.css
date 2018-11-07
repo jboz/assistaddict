@@ -161,3 +161,7 @@ form textarea {
   background-clip: padding-box;
   margin-bottom: 15px;
 }
+
+a {
+  cursor: pointer;
+}
