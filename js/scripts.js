@@ -1,8 +1,8 @@
-$(window).bind("scroll", function() {
+$(window).bind('scroll', function() {
   if ($(window).scrollTop() > 200) {
-    $("header").addClass("fixed");
+    $('header').addClass('fixed');
   } else {
-    $("header").removeClass("fixed");
+    $('header').removeClass('fixed');
   }
 });
 
@@ -13,21 +13,17 @@ $('a[href*="#"]')
   .not('[href="#0"]')
   .click(function(event) {
     // On-page links
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       // Figure out element to scroll to
       var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        $("html, body").animate(
+        $('html, body').animate(
           {
-            scrollTop: target.offset().top - 271
+            scrollTop: target.offset().top - 271,
           },
           1000,
           function() {
@@ -35,11 +31,11 @@ $('a[href*="#"]')
             // Must change focus!
             var $target = $(target);
             $target.focus();
-            if ($target.is(":focus")) {
+            if ($target.is(':focus')) {
               // Checking if the target was focused
               return false;
             } else {
-              $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
               $target.focus(); // Set focus again
             }
           }
@@ -53,26 +49,21 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-var $form = $("form#contact-form"),
-  url =
-    "https://script.google.com/macros/s/AKfycbw1sG6X_RfppoNoL9maLe0JgGu_f1m6tDH7FW7hkSXZfGa-KoSN/exec";
+var $form = $('form#contact-form'),
+  url = 'https://script.google.com/macros/s/AKfycbw1sG6X_RfppoNoL9maLe0JgGu_f1m6tDH7FW7hkSXZfGa-KoSN/exec';
 
-$("#submit-contact-form").on("click", function(e) {
-  $("form#contact-form .alert")
+$('#submit-contact-form').on('click', function(e) {
+  $('form#contact-form .alert')
     .finish()
     .hide();
 
   // validate form data
-  if (
-    !$("#contact-form_email").val() ||
-    !$("#contact-form_nom").val() ||
-    !$("#contact-form_message").val()
-  ) {
+  if (!$('#contact-form_email').val() || !$('#contact-form_nom').val() || !$('#contact-form_message').val()) {
     return;
   }
   // validate email format
-  if (!validateEmail($("#contact-form_email").val())) {
-    $("form#contact-form .error-email")
+  if (!validateEmail($('#contact-form_email').val())) {
+    $('form#contact-form .error-email')
       .show(500)
       .delay(10000)
       .hide(500);
@@ -80,32 +71,37 @@ $("#submit-contact-form").on("click", function(e) {
   }
 
   // send data
-  $("form#contact-form .alert-info").show(500);
+  $('form#contact-form .alert-info').show(500);
   e.preventDefault();
   var jqxhr = $.ajax({
+    crossDomain: true,
     url: url,
-    method: "POST",
-    dataType: "json",
+    method: 'GET',
+    dataType: 'jsonp',
     data: $form.serializeObject(),
-    success: function() {
-      // success
-      $("form#contact-form .alert").hide();
-      $("form#contact-form .alert-success")
-        .show(500)
-        .delay(5000)
-        .hide(500);
+
+    success: resultOK,
+    error: function(data) {
+      if (data.result == 'success') {
+        resultOK();
+      } else {
+        // unexpected error
+        resultError();
+      }
     },
-    error: function() {
-      // unexpected error
-      $("form#contact-form .alert").hide();
-      $("form#contact-form .error-unexpected")
-        .show(500)
-        .delay(10000)
-        .hide(500);
-    }
   });
 });
 
+function resultOK() {
+  $('form#contact-form .alert').hide();
+  $('form#contact-form .alert-success')
+    .show(500)
+    .delay(5000)
+    .hide(500);
+}
+
+function resultError() {}
+
 function mail() {
-  document.location.href = "mailto:contact" + "@" + "assistaddict.com";
+  document.location.href = 'mai' + 'lto:' + 'contact' + '@' + 'assistaddict.com';
 }
