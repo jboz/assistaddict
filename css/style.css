@@ -85,6 +85,8 @@ div.container.marketing {
 /**************************/
 header#header {
   position: fixed;
+  max-width: 1250px;
+  margin: auto;
 }
 
 /**************************/
