@@ -69,13 +69,13 @@ div.container.marketing {
 }
 
 #contact {
-  background-color: #34495e;
-  color: #f2f2f2;
+  background-color: #b660a0;
+  color: #fff;
 }
 
 #copyright {
-  background-color: #31a3dd;
-  color: #f2f2f2;
+  background-color: #843271;
+  color: #fff;
   text-align: center;
   padding: 1em 0;
 }
@@ -139,8 +139,8 @@ div.carousel .carousel-control .icon-prev {
 
 body .btn-primary {
   color: #000;
-  background-color: #69f0ae;
-  border-color: #69f0ae;
+  background-color: #ffa000;
+  border-color: #ffa000;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
