@@ -2,12 +2,12 @@
 Developper: Julien Boz
 Site: ifocusit.ch
 Location: Switzerland
-							
+
 /* THANKS */
 Name: Christophe Bordes, https://harvest.agency/
-                            
+
 /* SITE */
-Last update: 2019-09-03     
+Last update: 2019-09-25
 Standards: HTML5, CSS3
 Components: bootstrap, jquery
-Software: vscode, gimp, chrome                       
+Software: vscode, gimp, chrome
