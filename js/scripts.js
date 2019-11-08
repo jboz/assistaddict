@@ -54,8 +54,7 @@ function validateEmail(email) {
 }
 
 var $form = $("form#contact-form"),
-  url =
-    "https://script.google.com/macros/s/AKfycbw1sG6X_RfppoNoL9maLe0JgGu_f1m6tDH7FW7hkSXZfGa-KoSN/exec";
+  url = "désactiver"
 
 $("#submit-contact-form").on("click", function(e) {
   $("form#contact-form .alert")
