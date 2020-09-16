@@ -26,29 +26,9 @@ section {
   text-align: center;
 }
 
-#logo {
-  display: none;
-  font-family: Aspex;
-  font-size: 70px;
-  top: 18px;
-  color: rgb(255, 64, 129);
-  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
-}
-
-#logo span {
-  display: block;
-  height: 35px;
-}
-
-#logo span:nth-child(1) {
-  height: 50px;
-  font-size: 60px;
-}
-
 #nom {
   font-family: Castleland;
   font-size: 190px;
-  /*font-weight: bold;*/
 }
 
 section.row h2 {
@@ -61,7 +41,7 @@ section.row h2 {
 }
 
 .section-even {
-  background-color: #E1E2E1;
+  background-color: #e1e2e1;
 }
 
 div.container.marketing {
@@ -80,32 +60,19 @@ div.container.marketing {
   padding: 1em 0;
 }
 
-/**************************/
-/*      FIXED MENU        */
-/**************************/
-header#header {
-  position: fixed;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/**************************/
-/* override default style */
-/**************************/
-
-header.navbar-wrapper > div {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-header.navbar-wrapper nav.navbar {
-  background: white;
-  border: white;
+nav#navigation {
+  z-index: 1000;
   border-radius: 0;
 }
 
-header.navbar-wrapper {
-  margin-top: 0;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 div.carousel {

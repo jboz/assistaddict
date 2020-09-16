@@ -7,7 +7,13 @@ const Contact = () => {
   // Le message à bien été envoyé, merci. Nous vous contacterons rapidement.
   // Adresse email invalide.
   const sendMail = () => {
+    validateEmail(mail.email);
     setMessage({ value: 'Envoi en cours ...', severity: 'info' });
+  };
+
+  const validateEmail = email => {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
   };
 
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import About from 'sections/about.section';
-import Accueil from 'sections/accueil/accueil.section';
 import Copyright from 'sections/copyright.section';
 import Features from 'sections/features/features.section';
 import GestionAdmin from 'sections/gestion-admin/gestion-admin.section';
@@ -24,7 +23,6 @@ const App = () => {
         <Meta />
       </Helmet>
       <Header />
-      <Accueil />
 
       <div className="container marketing">
         <Presentation />
