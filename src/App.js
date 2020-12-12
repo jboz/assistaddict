@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 import { Helmet } from 'react-helmet';
 import About from 'sections/about.section';
 import Copyright from 'sections/copyright.section';
@@ -24,7 +25,7 @@ const App = () => {
       </Helmet>
       <Header />
 
-      <div className="container marketing">
+      <Container id="home" className="marketing">
         <Presentation />
         <Why />
 
@@ -44,7 +45,7 @@ const App = () => {
         <About />
         {/* <Contact /> */}
         <Copyright />
-      </div>
+      </Container>
     </>
   );
 };

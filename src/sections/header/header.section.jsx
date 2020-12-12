@@ -1,46 +1,26 @@
 import React from 'react';
-import yeux from './yeux.jpg';
+import { Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
   return (
     <>
-      <div id="logo-yeux" className="col-md-12">
+      {/* <div id="logo-yeux" className="col-md-12">
         <img className="img-responsive center-block" alt="Acceuil téléphonique" src={yeux} data-holder-rendered="true" />
-      </div>
-      <nav className="col-md-12 navbar navbar-default" id="navigation" role="navigation">
-        <div className="navbar-header">
-          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-        </div>
-
-        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav">
-            <li>
-              <a href="#accueil">Accueil</a>
-            </li>
-            <li>
-              <a href="#presentation">Presentation</a>
-            </li>
-            <li>
-              <a href="#features">Prestations</a>
-            </li>
-            <li>
-              <a href="#tariffs">Tarifs</a>
-            </li>
-            <li>
-              <a href="#about">A propos</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <ul className="nav navbar-nav navbar-right"></ul>
-        </div>
-      </nav>
+      </div> */}
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">Assist' Addict</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <Nav.Link href="#home">Accueil</Nav.Link>
+            <Nav.Link href="#presentation">Presentation</Nav.Link>
+            <Nav.Link href="#features">Prestations</Nav.Link>
+            <Nav.Link href="#tariffs">Tarifs</Nav.Link>
+            <Nav.Link href="#about">A propos</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   );
 };

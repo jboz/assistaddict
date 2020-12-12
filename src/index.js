@@ -1,16 +1,14 @@
-import App from "App";
-import "assets/css/bootstrap-theme.min.css";
-import "assets/css/bootstrap.min.css";
-import "assets/css/style.css";
-import React from "react";
-import { render } from "react-snapshot";
-import * as serviceWorker from "serviceWorker";
+import App from 'App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { render } from 'react-snapshot';
+import * as serviceWorker from 'serviceWorker';
 
 render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.querySelector("#root")
+  document.querySelector('#root')
 );
 
 // If you want your app to work offline and load faster, you can change
