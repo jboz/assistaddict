@@ -61,7 +61,7 @@ section.row h2 {
 }
 
 .section-even {
-  background-color: #E1E2E1;
+  background-color: #eeeeee;
 }
 
 div.container.marketing {
@@ -69,12 +69,12 @@ div.container.marketing {
 }
 
 #contact {
-  background-color: #b660a0;
+  background-color: #400157;
   color: #fff;
 }
 
 #copyright {
-  background-color: #843271;
+  background-color: #6e3284;
   color: #fff;
   text-align: center;
   padding: 1em 0;
@@ -128,19 +128,19 @@ div.carousel .carousel-control .icon-prev {
 .carousel-control.right,
 .carousel-control.left,
 .carousel .item {
-  background: #843271;
+  background: #6e3284;
 }
 
 .btn:hover {
-  background-color: #843271;
-  border-color: #843271;
+  background-color: #ff5722;
+  border-color: #ff5722;
   color: white;
 }
 
 body .btn-primary {
   color: #000;
-  background-color: #ffa000;
-  border-color: #ffa000;
+  background-color: #009688;
+  border-color: #009688;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
