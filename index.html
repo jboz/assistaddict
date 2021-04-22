@@ -350,8 +350,8 @@
             </article>
         </section>
         <section id="contact" class="row">
-            <div class="row">
-                <article class="col-md-12">
+            <div class="contact-form">
+                <article>
                     <h1>Contact</h1>
                     <div>
                         <address>
@@ -359,30 +359,28 @@
                         </address>
                     </div>
                 </article>
+                <div>
+                    <article>
+                        <a class="btn btn-lg btn-primary" href="#" onclick="mail()" role="button">
+                            <span>Me contacter</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                        </a>
+                    </article>
+                    <article>
+                        <a class="btn btn-lg btn-primary" href="#" onclick="sms()"" role="button">
+                            <span>M'écrire</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
             </div>
             <div class="row">
-                <article class="col-md-8">
-                    <form id="contact-form">
-                        <input type="text" name="nom" id="contact-form_nom" placeholder="Nom" required />
-                        <input type="text" name="email" id="contact-form_email" placeholder="Email" required />
-                        <textarea type="text" name="message" id="contact-form_message" placeholder="Message" required></textarea>
-                        <button class="btn btn-lg btn-primary" type="submit" id="submit-contact-form">Envoyer</button>
-                        <div class="alert alert-info" style="display: none;" role="alert">
-                            Envoie en cours ...
-                        </div>
-                        <div class="alert alert-success" style="display: none;" role="alert">
-                            Le message à bien été envoyé, merci. Nous vous contacterons rapidement.
-                        </div>
-                        <div class="alert alert-danger error-email" style="display: none;" role="alert">
-                            Adresse email invalide.
-                        </div>
-                        <div class="alert alert-danger error-unexpected" style="display: none;" role="alert">
-                            Erreur lors de l'envoie du message. Contrôler vos informations saisies ou bien contactez
-                            moi en cliquant sur ce lien <strong><a onclick="mail()">pour envoyer un email</a></strong>
-                        </div>
-                    </form>
-                </article>
-                <article class="col-md-4">
+                <article class="col-md-12">
                     <div class="google-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.123151551502!2d4.85632605163355!3d45.668427979001265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c29f84814499%3A0x7adcc9a58ea1d8de!2sAssist&#39;+Addict!5e0!3m2!1sfr!2sch!4v1535583000743"
                             frameborder="0" style="border:0" allowfullscreen></iframe>

@@ -1,4 +1,4 @@
-$(window).bind("scroll", function() {
+$(window).bind("scroll", function () {
   if ($(window).scrollTop() > 200) {
     $("header").addClass("fixed");
   } else {
@@ -11,7 +11,7 @@ $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
-  .click(function(event) {
+  .click(function (event) {
     // On-page links
     if (
       location.pathname.replace(/^\//, "") ==
@@ -27,10 +27,10 @@ $('a[href*="#"]')
         event.preventDefault();
         $("html, body").animate(
           {
-            scrollTop: target.offset().top - 271
+            scrollTop: target.offset().top - 271,
           },
           1000,
-          function() {
+          function () {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
@@ -48,63 +48,10 @@ $('a[href*="#"]')
     }
   });
 
-function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-
-var $form = $("form#contact-form"),
-  url = "désactiver"
-
-$("#submit-contact-form").on("click", function(e) {
-  $("form#contact-form .alert")
-    .finish()
-    .hide();
-
-  // validate form data
-  if (
-    !$("#contact-form_email").val() ||
-    !$("#contact-form_nom").val() ||
-    !$("#contact-form_message").val()
-  ) {
-    return;
-  }
-  // validate email format
-  if (!validateEmail($("#contact-form_email").val())) {
-    $("form#contact-form .error-email")
-      .show(500)
-      .delay(10000)
-      .hide(500);
-    return false;
-  }
-
-  // send data
-  $("form#contact-form .alert-info").show(500);
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "POST",
-    dataType: "json",
-    data: $form.serializeObject(),
-    success: function() {
-      // success
-      $("form#contact-form .alert").hide();
-      $("form#contact-form .alert-success")
-        .show(500)
-        .delay(5000)
-        .hide(500);
-    },
-    error: function() {
-      // unexpected error
-      $("form#contact-form .alert").hide();
-      $("form#contact-form .error-unexpected")
-        .show(500)
-        .delay(10000)
-        .hide(500);
-    }
-  });
-});
-
 function mail() {
   document.location.href = "mailto:contact" + "@" + "assistaddict.com";
+}
+
+function sms() {
+  document.location.href = "sms:" + "+33" + "764071910";
 }
