@@ -48,6 +48,10 @@ $('a[href*="#"]')
     }
   });
 
+$("#navigation a").click(function () {
+  $("#navbar-menu-items").removeClass("in");
+});
+
 function mail() {
   document.location.href = "mailto:contact" + "@" + "assistaddict.com";
 }
