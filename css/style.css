@@ -181,3 +181,25 @@ a svg {
   flex-flow: wrap;
   justify-content: space-between;
 }
+
+/**************************/
+/*      CLIENTS           */
+/**************************/
+#clients img {
+  max-width: 200px;
+}
+
+#clients div.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#clients div.container > div {
+  margin: 1em;
+  padding: 1em;
+  align-self: baseline;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 4px;
+}
