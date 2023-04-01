@@ -16,6 +16,11 @@ section {
   padding: 3em;
 }
 
+header div.alert.alert-warning {
+  border-radius: 0px;
+  padding: 1em;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
