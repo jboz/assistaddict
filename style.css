@@ -28,6 +28,9 @@ ul.navbar-nav {
   #contact {
     border-radius: 5px;
   }
+  div.alert {
+    border-radius: 0px 0px 5px 5px;
+  }
 }
 
 @media (width < 1400px) {
