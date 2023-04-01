@@ -7,204 +7,63 @@
   src: url(../fonts/Aspex.ttf);
 }
 
-body {
-  max-width: 1200px;
-  margin: auto;
+body div.container-xxl {
+  padding: 0;
 }
 
-section {
-  padding: 3em;
+a.btn.btn-primary {
+  color: #000;
+  background-color: #009688;
+  border-color: #009688;
 }
 
-header div.alert.alert-warning {
-  border-radius: 0px;
-  padding: 1em;
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-#logo {
-  display: none;
-  font-family: Aspex;
-  font-size: 70px;
-  top: 18px;
-  color: rgb(255, 64, 129);
-  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
-}
-
-#logo span {
-  display: block;
-  height: 35px;
-}
-
-#logo span:nth-child(1) {
-  height: 50px;
-  font-size: 60px;
-}
-
-#nom {
-  font-family: Castleland;
-  font-size: 190px;
-  /*font-weight: bold;*/
-}
-
-section.row h2 {
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-.img-circle {
-  border-radius: 50%;
-}
-
-.section-even {
-  background-color: #eeeeee;
-}
-
-div.container.marketing {
-  width: 100%;
-}
-
-#contact {
-  background-color: #400157;
-  color: #fff;
-}
-
-#copyright {
-  background-color: #6e3284;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-}
-
-/**************************/
-/*      FIXED MENU        */
-/**************************/
-header#header {
-  position: fixed;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/**************************/
-/* override default style */
-/**************************/
-
-header.navbar-wrapper > div {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-header.navbar-wrapper nav.navbar {
-  background: white;
-  border: white;
-  border-radius: 0;
-}
-
-header.navbar-wrapper {
-  margin-top: 0;
-}
-
-div.carousel {
-  margin-bottom: 0;
-}
-
-div.carousel .carousel-control .glyphicon-chevron-left,
-div.carousel .carousel-control .glyphicon-chevron-right,
-div.carousel .carousel-control .icon-next,
-div.carousel .carousel-control .icon-prev {
-  top: 70%;
-}
-
-/* hide carousel item background image */
-.carousel .item > img {
-  display: none;
-}
-
-/* change carousel background color */
-.carousel-control.right,
-.carousel-control.left,
-.carousel .item {
-  background: #6e3284;
-}
-
-.btn:hover {
+a.btn.btn-primary:hover {
   background-color: #ff5722;
   border-color: #ff5722;
   color: white;
 }
 
-body .btn-primary {
-  color: #000;
-  background-color: #009688;
-  border-color: #009688;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+nav {
+  background-color: white;
 }
 
-/**************************/
-/*      CONTACT FORM      */
-/**************************/
-#contact .google-map {
-  height: 25rem;
-  position: relative;
-}
-
-#contact iframe {
-  height: 100%;
+ul.navbar-nav {
   width: 100%;
 }
 
-a svg {
-  vertical-align: middle;
+@media (width >= 1400px) {
+  .carousel-content,
+  section.bg-secondary,
+  #contact {
+    border-radius: 5px;
+  }
 }
 
-#contact .contact-form {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
+@media (width < 1400px) {
+  div.alert {
+    border-radius: 0px;
+  }
 }
 
-#contact .contact-form article {
-  padding-left: 1em;
-  padding-bottom: 1em;
+.carousel-content {
+  height: 14rem;
+  background: #6e3284;
+  color: white;
 }
 
-#contact .contact-form > div article {
-  display: flex;
-  flex-direction: column;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
-
-/**************************/
-/*      CLIENTS           */
-/**************************/
 #clients img {
   max-width: 200px;
 }
 
-#clients div.container {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-#clients div.container > div {
+#clients .logo {
   margin: 1em;
   padding: 1em;
   align-self: baseline;
   box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  border-radius: 4px;
+  border-radius: 10px;
+}
+
+#contact {
+  background-color: #400157;
+  color: #fff;
 }
