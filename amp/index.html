@@ -21,18 +21,8 @@
 
     <link rel="canonical" href="https://www.assistaddict.com" />
 
-    <style amp-boilerplate>
-      body {
-        visibility: hidden;
-      }
-    </style>
-    <noscript
-      ><style amp-boilerplate>
-        body {
-          visibility: visible;
-        }
-      </style></noscript
-    >
+    <style amp-boilerplate>body { visibility: hidden; }</style>
+    <noscript><style amp-boilerplate>body { visibility: visible; }</style></noscript>
     <style amp-custom>
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -42,20 +32,24 @@
         margin: 0;
         padding: 0;
       }
+
       .container {
         max-width: 100%;
         padding: 0;
       }
+
       header img {
         width: 100%;
         display: block;
       }
+
       nav {
         background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         padding: 0.5rem 0;
       }
+
       .nav-brand {
         font-weight: 700;
         color: #009688;
@@ -65,6 +59,7 @@
         text-align: center;
         padding: 0.5rem;
       }
+
       .alert {
         background: linear-gradient(135deg, #fff3cd, #ffeeba);
         color: #664d03;
@@ -72,6 +67,7 @@
         text-align: center;
         border-radius: 0 0 1rem 1rem;
       }
+
       .carousel {
         background: linear-gradient(135deg, #400157, #6e3284);
         color: white;
@@ -79,10 +75,12 @@
         padding: 2rem 1rem;
         border-radius: 0 0 2rem 2rem;
       }
+
       .carousel h1 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
       }
+
       .btn {
         display: inline-block;
         background: #009688;
@@ -95,9 +93,11 @@
         cursor: pointer;
         margin: 0.25rem;
       }
+
       .btn:hover {
         background: #ff5722;
       }
+
       section {
         background: white;
         margin: 1rem;
@@ -105,18 +105,21 @@
         padding: 2rem 1rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
+
       section h1 {
         color: #009688;
         border-bottom: 3px solid #009688;
         padding-bottom: 0.5rem;
         margin-bottom: 1.5rem;
       }
+
       .features {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
       }
+
       .feature {
         flex: 1 1 280px;
         max-width: 300px;
@@ -126,6 +129,7 @@
         text-align: center;
         border: 1px solid #e9ecef;
       }
+
       .feature img {
         border-radius: 0.75rem;
         width: 100%;
@@ -133,6 +137,7 @@
         object-fit: cover;
         margin-bottom: 1rem;
       }
+
       .clients {
         display: flex;
         flex-wrap: wrap;
@@ -140,6 +145,7 @@
         gap: 1rem;
         background: #f5f5f5;
       }
+
       .logo {
         background: white;
         border-radius: 0.75rem;
@@ -151,32 +157,40 @@
         justify-content: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       }
+
       .logo img {
         max-width: 100%;
         max-height: 50px;
         filter: grayscale(100%);
       }
+
       .about {
         background: linear-gradient(135deg, #400157, #5a014a);
         color: white;
       }
+
       .about h1 {
         border-bottom-color: white;
       }
+
       .contact {
         background: linear-gradient(135deg, #400157, #5a014a);
         color: white;
       }
+
       .contact h1 {
         border-bottom-color: white;
       }
+
       .contact .btn {
         background: white;
         color: #400157;
       }
+
       .contact .btn:hover {
         background: #f8f9fa;
       }
+
       footer {
         background: #212529;
         color: white;
@@ -185,20 +199,24 @@
         border-radius: 2rem 2rem 0 0;
         margin-top: 2rem;
       }
+
       .list-item {
         padding: 0.5rem 0;
         border-bottom: 1px solid #e9ecef;
       }
+
       @media (min-width: 768px) {
         .carousel h1 {
           font-size: 2rem;
         }
+
         .feature {
           flex: 1 1 300px;
         }
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -323,7 +341,8 @@
         <section id="about" class="about">
           <h1>À propos</h1>
           <blockquote>
-            Choisis un métier que tu aimes et tu n'auras jamais à travailler un seul jour de ta vie. <cite>Confucius</cite>
+            Choisis un métier que tu aimes et tu n'auras jamais à travailler un seul jour de ta vie.
+            <cite>Confucius</cite>
           </blockquote>
           <p>
             Après plus de 10 ans dans le secteur des Sociétés de Services, j'ai créé Assist' Addict pour vous offrir un soutien
@@ -343,12 +362,9 @@
       </main>
 
       <footer>
-        <p>&copy; <span id="year"></span> Assist' Addict - Anne-Lyse Cusin</p>
+        <p>&copy; Assist' Addict - Anne-Lyse Cusin</p>
         <p>33 route de Vienne, 69320 Feyzin</p>
       </footer>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
