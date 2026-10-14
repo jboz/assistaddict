@@ -6,4 +6,4 @@ Location: Lyon
 Name: Christophe Bordes, https://harvest.agency/
 
 /* SITE */
-Last update: 2026-05-18
+Last update: 2026-10-14
