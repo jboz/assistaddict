@@ -21,12 +21,26 @@
 
     <link rel="canonical" href="https://www.assistaddict.com" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <style amp-custom>
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        line-height: 1.6;
-        color: #212529;
-        background: #f8f9fa;
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1225;
+        background:
+          radial-gradient(60rem 40rem at 100% -10%, rgba(217, 70, 239, 0.08), transparent 60%),
+          radial-gradient(50rem 35rem at -10% 5%, rgba(124, 58, 237, 0.08), transparent 55%), #faf8ff;
         margin: 0;
         padding: 0;
       }
@@ -36,79 +50,114 @@
         padding: 0;
       }
 
+      header {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 30px 30px;
+      }
+
       header img {
         width: 100%;
         display: block;
       }
 
       nav {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #ffffff;
+        border: 1px solid rgba(124, 58, 237, 0.12);
+        border-top: none;
+        border-radius: 0 0 22px 22px;
         padding: 0.5rem 0;
       }
 
       .nav-brand {
-        font-weight: 700;
-        color: #009688;
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        font-weight: 800;
         text-decoration: none;
         font-size: 1.25rem;
         display: block;
         text-align: center;
         padding: 0.5rem;
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
 
       .alert {
-        background: linear-gradient(135deg, #fff3cd, #ffeeba);
-        color: #664d03;
+        background: linear-gradient(135deg, #fff8e6, #ffeec9);
+        color: #7a4b00;
         padding: 0.75rem 1rem;
         text-align: center;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 16px;
+        margin: 0.6rem 1rem 0;
       }
 
       .carousel {
-        background: linear-gradient(135deg, #400157, #6e3284);
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
         color: white;
         text-align: center;
-        padding: 2rem 1rem;
-        border-radius: 0 0 2rem 2rem;
+        padding: 3rem 1.25rem;
+        border-radius: 0 0 30px 30px;
+        margin: 0.6rem 0 1.1rem;
+        box-shadow: 0 26px 60px rgba(76, 29, 149, 0.18);
       }
 
       .carousel h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-size: 1.7rem;
+        margin: 0 auto 1.25rem;
+        max-width: 46rem;
       }
 
       .btn {
         display: inline-block;
-        background: #009688;
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
         color: white;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
+        padding: 0.75rem 1.6rem;
+        border-radius: 999px;
         text-decoration: none;
-        font-weight: 500;
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        font-weight: 700;
         border: none;
         cursor: pointer;
         margin: 0.25rem;
-      }
-
-      .btn:hover {
-        background: #ff5722;
+        box-shadow: 0 10px 26px rgba(124, 58, 237, 0.3);
       }
 
       section {
         background: white;
-        margin: 1rem;
-        border-radius: 1.5rem;
-        padding: 2rem 1rem;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        margin: 1.1rem;
+        border-radius: 30px;
+        padding: 2.5rem 1.5rem;
+        border: 1px solid rgba(124, 58, 237, 0.06);
+        box-shadow: 0 2px 12px rgba(76, 29, 149, 0.06);
       }
 
       section h1 {
-        color: #009688;
-        border-bottom: 3px solid #009688;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem;
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-size: 1.9rem;
+        color: #1a1225;
+        position: relative;
+        padding-bottom: 0.9rem;
+        margin: 0 0 2rem;
+      }
+
+      section h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3.5rem;
+        height: 4px;
+        border-radius: 4px;
+        background: linear-gradient(135deg, #7c3aed 0%, #a855f7 45%, #d946ef 100%);
       }
 
       .features {
@@ -119,17 +168,24 @@
       }
 
       .feature {
-        flex: 1 1 280px;
-        max-width: 300px;
-        background: #f8f9fa;
-        border-radius: 1rem;
+        flex: 1 1 260px;
+        max-width: 320px;
+        background: linear-gradient(180deg, #ffffff, #fbfaff);
+        border-radius: 20px;
         padding: 1.5rem;
         text-align: center;
-        border: 1px solid #e9ecef;
+        border: 1px solid rgba(124, 58, 237, 0.1);
+        box-shadow: 0 2px 12px rgba(76, 29, 149, 0.06);
+      }
+
+      .feature h3 {
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        font-weight: 700;
+        color: #1a1225;
       }
 
       .feature img {
-        border-radius: 0.75rem;
+        border-radius: 14px;
         width: 100%;
         height: 120px;
         object-fit: cover;
@@ -141,75 +197,109 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        background: #f5f5f5;
+        background: linear-gradient(135deg, #f6f2ff 0%, #fdf3ff 100%);
       }
 
       .logo {
         background: white;
-        border-radius: 0.75rem;
+        border-radius: 16px;
         padding: 1rem;
         width: 150px;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(124, 58, 237, 0.08);
+        box-shadow: 0 2px 12px rgba(76, 29, 149, 0.06);
       }
 
       .logo img {
         max-width: 100%;
         max-height: 50px;
-        filter: grayscale(100%);
+        opacity: 0.75;
       }
 
       .about {
-        background: linear-gradient(135deg, #400157, #5a014a);
+        background: linear-gradient(135deg, #2e1065 0%, #4c1d95 45%, #6b21a8 100%);
         color: white;
       }
 
-      .about h1 {
-        border-bottom-color: white;
+      .about h1,
+      .about blockquote,
+      .about cite {
+        color: white;
+      }
+
+      .about h1::after {
+        background: linear-gradient(135deg, #ffffff, #e9d5ff);
       }
 
       .contact {
-        background: linear-gradient(135deg, #400157, #5a014a);
+        background: linear-gradient(135deg, #2e1065 0%, #4c1d95 45%, #6b21a8 100%);
         color: white;
       }
 
-      .contact h1 {
-        border-bottom-color: white;
+      .contact h1,
+      .contact p,
+      .contact strong {
+        color: white;
+      }
+
+      .contact h1::after {
+        background: linear-gradient(135deg, #ffffff, #e9d5ff);
       }
 
       .contact .btn {
         background: white;
-        color: #400157;
-      }
-
-      .contact .btn:hover {
-        background: #f8f9fa;
+        color: #4c1d95;
+        box-shadow: 0 10px 26px rgba(15, 6, 40, 0.35);
       }
 
       footer {
-        background: #212529;
+        background: linear-gradient(135deg, #2e1065 0%, #4c1d95 45%, #6b21a8 100%);
         color: white;
         text-align: center;
-        padding: 2rem;
-        border-radius: 2rem 2rem 0 0;
+        padding: 2.5rem 2rem;
+        border-radius: 30px 30px 0 0;
         margin-top: 2rem;
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      }
+
+      footer p {
+        color: rgba(255, 255, 255, 0.85);
       }
 
       .list-item {
-        padding: 0.5rem 0;
-        border-bottom: 1px solid #e9ecef;
+        padding: 0.7rem 0 0.7rem 1.75rem;
+        position: relative;
+        border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+        list-style: none;
+        color: #4b4257;
+      }
+
+      .list-item::before {
+        content: '';
+        position: absolute;
+        left: 0.25rem;
+        top: 1.1rem;
+        width: 8px;
+        height: 8px;
+        border-radius: 3px;
+        background: linear-gradient(135deg, #7c3aed 0%, #d946ef 100%);
+        transform: rotate(45deg);
       }
 
       @media (min-width: 768px) {
         .carousel h1 {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
 
         .feature {
           flex: 1 1 300px;
+        }
+
+        section {
+          padding: 4rem 3rem;
         }
       }
     </style>
